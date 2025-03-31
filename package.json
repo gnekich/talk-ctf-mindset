@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build-gh-pages": "vite build --base=. --outDir=dist && npm run copy-index-to-404",
+    "build-gh-pages": "vite build --base=/talk-ctf-mindset/ --outDir=dist && npm run copy-index-to-404",
     "copy-index-to-404": "cp dist/index.html dist/404.html"
   },
   "dependencies": {
