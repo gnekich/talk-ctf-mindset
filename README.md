@@ -11,6 +11,11 @@ This repository contains the presentation for the ri-comp.com conference, as par
 ## Meta
 
 This presentation contains the flag itself. Take a deep look into the history; you can find all sorts of interesting stuff there when you inspect the past.
+Hint; "Povijest je učiteljica života!"
+
+Što kada pronađem flag? Pošalji mail sadržaja; `<Ime> <Prezime> <flag>` na mail koji ćeš naći u prezentaciji.
+
+## Misc
 
 Feel free to edit or contribute.
 
