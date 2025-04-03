@@ -54,18 +54,15 @@ function Slide() {
           </div>
         </div>
         <SpeakerNotes>
-          Prvo malo o firmi i sponzoru.
+          Dopustite mi da vam ukratko predstavim našu firmu, Elixirr Digital.
           <br />
-          Elixirr Digital je vodeća konzultantska kompanija koja pruža
-          inovativna rješenja. Mi smo Agencija. Više informacija možete pronaći
-          na stranici.
+          Mi smo vodeća konzultantska kompanija koja pruža inovativna rješenja
+          za digitalnu transformaciju.
           <br />
-          Radimo u modernim tehnologijama i poznatim klijentima.
+          Radimo s poznatim klijentima i koristimo moderne tehnologije.
           <br />
-          Također održavamo akademiju za studente i mlade talente, gdje se
-          možete prijaviti i učiti o raznim tehnologijama na pravim projektima,
-          najbolji dobiju i ponudu za posao.
-          <br />
+          Na našoj web stranici možete pronaći više informacija o tome tko smo i
+          što radimo. QR kod vodi na našu web stranicu.
         </SpeakerNotes>
       </section>
       <section>
@@ -81,18 +78,18 @@ function Slide() {
           />
         </div>
         <SpeakerNotes>
-          U kratkim crtama, 1999 iOLAP Inc. je osnovan.
+          Naša priča započela je 1999. godine kada je osnovan iOLAP Inc.
           <br />
-          2011. godine otvoren je prvih HQ u Rijeci.
           <br />
-          2019. godine prelazimo 200 zaposlenika.
+          Prvi ured u Hrvatskoj otvoren je 2011. godine tu u Rijeci.
           <br />
-          2021. pokrećemo iOLAP Akademiju.
           <br />
-          2022. godine akvizira nas Elixirr Grupa, postajemo dio Elixirr-a
+          Do 2019. godine premašili smo 200 zaposlenika, a 2021. pokrenuli smo
+          iOLAP Akademiju.
           <br />
-          2024. rebranding iz iOLAP u Elxirr Digital
           <br />
+          Godine 2022. postali smo dio Elixirr Grupe, a 2024. godine
+          rebrandirali smo se u Elixirr Digital.
         </SpeakerNotes>
       </section>
       <section>
@@ -109,14 +106,14 @@ function Slide() {
           />
         </div>
         <SpeakerNotes>
-          Imamo urede diljem svijeta.
+          Imamo globalnu prisutnost s uredima diljem svijeta.
           <br />
-          6 ureda, u 5 zemalja.
           <br />
-          Uredi u Dallasu i Austin-u, Texas.
+          Naši uredi nalaze se u Dallasu i Austinu u Teksasu, Meksiku, Londonu,
+          Hrvatskoj i Južnoj Africi.
           <br />
-          Uredi u Meksiku, Londonu, Hrvatskoj, Južnoj Africi.
           <br />
+          Ponosni smo što radimo s klijentima iz različitih industrija i regija.
         </SpeakerNotes>
       </section>
       <section data-background-color="#eff2f7">
@@ -132,21 +129,19 @@ function Slide() {
           />
         </div>
         <SpeakerNotes>
-          Koristimo moderne tehnologije i alate.
+          Koristimo širok spektar modernih tehnologija i alata.
           <br />
-          Prvenstveno tražimo ljude koji su strastveni prema tehnologiji i
+          <br />
+          Naš fokus je na tehnologijama poput JavaScript-a, TypeScript-a i
+          Python-a, ali koristimo i mnoge druge.
+          <br />
+          <br />
+          Imamo različite trackove, uključujući analizu podataka, umjetnu
+          inteligenciju i razvoj aplikacija.
+          <br />
+          <br />
+          Naš neki cilj je pronaći ljude koji su strastveni prema tehnologiji i
           učenju.
-          <br />
-          Preferencija nam je Javascript, Typescript, Python, ali i ostali
-          jezici su zastupljeni.
-          <br />
-          Vidjeti ćete tu na slici da koristimo REST, GraphQL, ima za svakog
-          nešto.
-          <br />
-          Imamo više trackova, nije samo ADD odnosno application design i
-          development,
-          <br />
-          nego ima tu i analize podataka, korištenja umjetne inteligencije, itd.
         </SpeakerNotes>
       </section>
       <section data-background-color="#1c1120">
@@ -162,11 +157,15 @@ function Slide() {
           />
         </div>
         <SpeakerNotes>
-          Radimo sa fortune 500 klijentima.
+          Radimo s nekim od najvećih svjetskih kompanija, uključujući Fortune
+          500 klijente.
           <br />
-          Možete vidjeti na primjer, iRobot, Shaw, Blizzard, Bank of America,
-          Walmart, Pfizer, itd. itd.
           <br />
+          Naši klijenti uključuju iRobot, Shaw, Blizzard, Bank of America,
+          Walmart, Pfizer i mnoge druge.
+          <br />
+          <br />
+          Ponosni smo na povjerenje koje su nam ukazali.
         </SpeakerNotes>
       </section>
     </section>

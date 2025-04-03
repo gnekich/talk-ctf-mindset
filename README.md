@@ -6,7 +6,7 @@
 
 ## Details
 
-This repository contains the presentation for the ri-comp.com conference, as part of the talk "CTF{mindset} Kako razmišljati kao haker i zaštititi svoje aplikacije."
+This repository contains the presentation for the [ri-comp.com](https://www.ri-comp.com/) conference, as part of the talk "CTF{mindset} Kako razmišljati kao haker i zaštititi svoje aplikacije."
 
 ## Meta
 

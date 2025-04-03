@@ -5,7 +5,7 @@ function Slide() {
   return (
     <>
       <section data-transition="slide">
-        <h3>{"Što kad postanemo dobri"}</h3>
+        <h3>{"Što mogu napraviti još danas"}</h3>
         <p>
           Prvi korak je pratiti set standarda koji nam omogućuju da nam netko
           sigurno javi propuste na našoj aplikaciji.
@@ -24,10 +24,9 @@ Preferred-Languages: en, de
 Policy: https://www.allianz.com/en/disclosure-policy.html
 Hiring: https://careers.allianz.com/`}
         />
-        <SpeakerNotes></SpeakerNotes>
 
         <p>
-          Kreirati vlunerability disclosure policy i/ili se registrirati na
+          Definirati vulnerability disclosure policy i/ili se registrirati na
           platforme koje to nude.
           <br />
           <strong>
@@ -35,24 +34,45 @@ Hiring: https://careers.allianz.com/`}
           </strong>
           , <strong>Bugcrowd</strong>, itd.{" "}
         </p>
+        <SpeakerNotes>
+          Kada pričamo o sigurnosti, prvi korak koji možemo napraviti već danas
+          je omogućiti ljudima da nam sigurno prijave ranjivosti.
+          <br />
+          Kao što imamo <strong>robots.txt</strong>, možemo dodati i{" "}
+          <strong>security.txt</strong> file na našu stranicu.
+          <br />
+          Ovaj file sadrži informacije poput kontakta, enkripcijskih ključeva i
+          politike otkrivanja ranjivosti.
+          <br />
+          Također, možemo definirati vlastitu{" "}
+          <strong>vulnerability disclosure policy</strong> ili se registrirati
+          na platforme poput <strong>HackerOne</strong> ili{" "}
+          <strong>Bugcrowd</strong>.
+          <br />
+          Ovo su jednostavni koraci koji pokazuju da ozbiljno shvaćamo sigurnost
+          i da smo otvoreni za suradnju s istraživačima.
+        </SpeakerNotes>
       </section>
       <section data-transition="slide">
         <h3>{"Nikada ne posustati"}</h3>
         <p>
-          Ako se odlučite biti etički haker jer vam to ide, biti će jako teško,
-          ali nikada ne posustati. Nećete biti cjenjeni, neće vas se razumijeti.
-          Uvijek će vas gledati kao nekog koji narušava autoritet. Netko tko se
-          pravi pametan.
+          Ako se odlučite za karijeru etičkog hakera "istraživača", budite
+          spremni na izazove.
+        </p>
+        <p>
+          Često vas neće razumjeti, a ponekad će vas gledati kao nekoga tko
+          narušava autoritet ili se "pravi pametan".
+          <br />
         </p>
         <p>
           Koliko god teško bilo, a biti će, ostanite{" "}
           <strong style={{ color: "white" }}>White Hat</strong>.
         </p>
-        <p>Short story time.</p>
+        <p>Short story time...</p>
         <p>
           ...
           <strong>
-            <strike style={{ color: "red" }}>Carnet</strike>
+            <strike style={{ color: "red" }}>CARNET</strike>
           </strong>
           ,{" "}
           <strong>
@@ -74,14 +94,17 @@ Hiring: https://careers.allianz.com/`}
           </strong>
           , ...
         </p>
-        <p>
-          <CodeBlock
-            languageClass="language-xml"
-            codeString={`
-          "Ajd' ne budi glup." - Moreno`}
-          />
-        </p>
-        <SpeakerNotes></SpeakerNotes>
+        <SpeakerNotes>
+          Ako se odlučite za karijeru etičkog hakera, budite spremni na izazove.
+          <br />
+          Često vas neće razumjeti, a ponekad će vas gledati kao nekoga tko
+          narušava autoritet ili se "pravi pametan".
+          <br />
+          No, koliko god teško bilo, uvijek ostanite <strong>White Hat</strong>.
+          <br />
+          A sada kratka priča iz mog iskustva.
+          <br />
+        </SpeakerNotes>
       </section>
     </>
   );

@@ -1,3 +1,5 @@
+import SpeakerNotes from "../components/SpeakerNotes.jsx";
+
 function Slide() {
   return (
     <section>
@@ -34,7 +36,7 @@ function Slide() {
           </p>
           <p>
             <strong>Opis:</strong> Programer, entuzijast za sigurnost, borac za
-            slobodni/sigurni internet. ❤️ Open Source.
+            slobodni/sigurni internet. ❤️ Open Source ❤️
           </p>
           <p>
             <strong>Na web-u:</strong>
@@ -60,9 +62,35 @@ function Slide() {
                 Bugcrowd: @gnekich
               </a>
             </li>
+            <li>
+              <a href="https://gordan.neki.ch" target="_blank">
+                Web
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+      <SpeakerNotes>
+        Malo o meni, moje ime je Gordan Nekić, i radim kao Lead Engineer u
+        Elixirr Digitalu.
+        <br />
+        <br />
+        Programer sam s velikom strašću prema računalnoj sigurnosti i borac za
+        slobodni i sigurni internet.
+        <br />
+        <br />
+        Veliki sam ljubitelj Open Source-a i vjerujem u dijeljenje znanja i
+        zajednički rad na projektima.
+        <br />
+        <br />
+        Na ekranu možete vidjeti nekoliko linkova gdje me možete pronaći online,
+        uključujući Blue Sky, GitHub, LinkedIn, Bugcrowd i moju osobnu web
+        stranicu.
+        <br />
+        <br />
+        Ako imate bilo kakva pitanja ili želite saznati više o meni, slobodno me
+        kontaktirajte putem ovih platformi.
+      </SpeakerNotes>
     </section>
   );
 }

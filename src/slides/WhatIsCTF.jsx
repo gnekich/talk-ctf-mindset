@@ -20,9 +20,9 @@ function Slide() {
           uspješno riješen.
         </p>
         <SpeakerNotes>
-          CTF (Capture The Flag) ili na hrvatski to bi bilo "Lov na zastavice" |
-          "Uhvati zastavu" je natjecanje u računalnoj sigurnosti u kojem
-          sudionici rješavaju razne zadatke kako bi pronašli zastavicu.
+          CTF (Capture The Flag) ili na hrvatski to bi bilo "Lov na zastavice"
+          je natjecanje u računalnoj sigurnosti u kojem sudionici rješavaju
+          razne zadatke kako bi pronašli zastavicu.
           <br />
         </SpeakerNotes>
       </section>
@@ -86,6 +86,10 @@ HTB{APT28}
               umjetne inteligencije (Prompt injection).
             </li>
           </ul>
+          <SpeakerNotes>
+            <p>Imamo razne tipove izazova</p>
+            <p>Pa kako to izgleda u praksi...</p>
+          </SpeakerNotes>
         </section>
         <section>
           <h2>Primjer CTF-a:</h2>
@@ -99,7 +103,12 @@ HTB{APT28}
               }}
             />
           </div>
-          <SpeakerNotes></SpeakerNotes>
+          <SpeakerNotes>
+            <p>
+              Imamo neki dashboard sa zadacima, sa strane imamo kategorije,
+              vidimo bodove, itd.
+            </p>
+          </SpeakerNotes>
         </section>
         <section>
           <h2>Primjer Profila:</h2>
@@ -113,7 +122,9 @@ HTB{APT28}
               }}
             />
           </div>
-          <SpeakerNotes></SpeakerNotes>
+          <SpeakerNotes>
+            <p>Ovo may or may not be me...</p>
+          </SpeakerNotes>
         </section>
       </section>
       <section>
@@ -170,7 +181,7 @@ HTB{APT28}
             <li>
               <strong>
                 <a href="https://alpacahack.com/" target="_blank">
-                  AlpacaCTF
+                  AlpacaHack
                 </a>
               </strong>
               : Edukativno CTF natjecanje za početnike i profesionalce.
@@ -200,7 +211,7 @@ HTB{APT28}
             <li>
               <strong>
                 <a href="https://alpacahack.com/" target="_blank">
-                  AlpacaCTF
+                  AlpacaHack
                 </a>
               </strong>
               : Edukativno CTF natjecanje za početnike i profesionalce.
@@ -234,7 +245,7 @@ HTB{APT28}
                 Ghidra
               </a>
             </strong>
-            : Alat za reverzno inženjerstvo binarnih datoteka.
+            : Alat za obrnuto inženjerstvo binarnih datoteka.
           </li>
           <li>
             <strong>
@@ -277,6 +288,14 @@ HTB{APT28}
             ranjivosti.
           </li>
         </ul>
+        <SpeakerNotes>
+          <p>Ovdje sam naveo neke alate koji su korisni za CTF natjecanja.</p>
+          <p>
+            Najbitniji vam je CyberChef, jer je to alat za skoro sve! Jako
+            koristan i za programere
+          </p>
+          <p>Pwntools je Python CTF framework, iznimno koristan za CTF.</p>
+        </SpeakerNotes>
       </section>
 
       <section>
@@ -292,32 +311,25 @@ HTB{APT28}
       <section>
         <h2>Kako CTF pomaže programerima?</h2>
         <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-          <li>
+          <li style={{ padding: "10px 0" }}>
             ✅ Programeri uče kako napadači razmišljaju i otkrivaju ranjivosti.
           </li>
-          <li>
+          <li style={{ padding: "10px 0" }}>
             ✅ Prepoznaju sigurnosne propuste u vlastitom kodu, npr. SQL
             Injection, XSS, Buffer Overflow, Session reuse, i mnoge druge
             propuste.
           </li>
-          <li>
-            ✅ Razumiju važnost sigurnih koderskih praksi. (Neću commitat
-            application secrete u git, koristit ću env varijable, neću dopustiti
-            Copilotu da mi šalje .env file M$-u, deployamo samo preko CI/CD-a,
-            review-amo kod, pišemo testove, itd.)
+          <li style={{ padding: "10px 0" }}>
+            ✅ Razumiju važnost sigurnih praksi. (Neću commitat application
+            secrete u source, koristit ću env varijable, neću dopustiti GitHub
+            Copilotu da mi šalje .env file online, deployamo samo preko CI/CD-a,
+            koristimo IaC, review-amo kod, pišemo testove, itd.)
           </li>
-          <li>
+          <li style={{ padding: "10px 0" }}>
             ✅ CTF izazovi su često logičke zagonetke koje razvijaju kreativno
             razmišljanje.
           </li>
         </ul>
-        <notes>
-          <p>
-            Sudjelovanje u CTF natjecanjima može biti izuzetno korisno za
-            programere, čak i ako nisu usmjereni isključivo na računalnu
-            sigurnost.
-          </p>
-        </notes>
       </section>
     </>
   );

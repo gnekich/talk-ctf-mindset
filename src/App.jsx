@@ -25,6 +25,8 @@ import WhatIsCTFSlide from "./slides/WhatIsCTF";
 import WhatWillYouEncounterSlide from "./slides/WhatWillYouEncounter";
 import WhenWeBecomeGoodAtItSlide from "./slides/WhenWeBecomeGoodAtIt";
 import ConclusionCTFSlide from "./slides/ConclusionCTF";
+import UsefulLinksSlide from "./slides/UsefulLinks";
+import DemoSlide from "./slides/Demo";
 
 function App() {
   console.log("Sanity check; React App Rerender!");
@@ -74,6 +76,8 @@ function App() {
         <WhatIsCTFSlide />
         <WhatWillYouEncounterSlide />
         <WhenWeBecomeGoodAtItSlide />
+        <DemoSlide />
+        <UsefulLinksSlide />
         <ConclusionCTFSlide />
       </div>
     </div>

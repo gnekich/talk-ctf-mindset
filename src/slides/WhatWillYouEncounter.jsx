@@ -5,7 +5,7 @@ function Slide() {
     <>
       <section>
         <section>
-          <h2>Neki od prijmera</h2>
+          <h2>Neki od propusta</h2>
           <p>...na koje će te naići</p>
         </section>
         <section>
@@ -28,15 +28,10 @@ function Slide() {
         <section>
           <h2>Primjer: XSS (Cross-Site Scripting)</h2>
           <p>Jednostavan primjer XSS napada:</p>
-          <pre>
-            <code class="language-html">
-              <input
-                type="text"
-                name="username"
-                value="<script>alert('XSS!')</script>"
-              />
-            </code>
-          </pre>
+          <CodeBlock
+            languageClass="language-xml"
+            codeString={`<input type="text" name="username" value=""><script>alert('XSS!')</script>"<br />`}
+          />
           <p>
             Ako aplikacija ne sanitizira unos, napadač može izvršiti zlonamjerni
             kod u pregledniku korisnika.
@@ -46,12 +41,13 @@ function Slide() {
         <section>
           <h2>Primjer: Ranjivost u Python aplikaciji</h2>
           <p>Primjer nesigurnog izvršavanja naredbi:</p>
-          <pre>
-            <code class="language-python">
-              import os user_input = input("Unesite naredbu: ")
-              os.system(user_input)
-            </code>
-          </pre>
+          <CodeBlock
+            languageClass="language-python"
+            codeString={`
+import os user_input = input("Unesite naredbu: ")
+os.system(user_input)
+              `}
+          />
           <p>
             Ako korisnik unese <code>rm -rf /</code>, može uništiti sustav!
           </p>
@@ -59,30 +55,29 @@ function Slide() {
         <section>
           <h2>Primjer: Buffer Overflow</h2>
           <p>Primjer iskorištavanja buffer overflow ranjivosti:</p>
-          <pre>
-            <code class="language-c">
-              {`
-#include <stdio.h>
-#include <string.h>
-
-void tajna_funkcija() {
-    printf("Pozvana je tajna funkcija!\\n");
-}
-
-void ranjiva_funkcija() {
-    char buffer[8];
-    printf("Unesite podatke: ");
-    gets(buffer); // Nesigurna funkcija
-}
-
-int main() {
-    ranjiva_funkcija();
-    printf("Kraj programa.\\n");
-    return 0;
-}
-`}
-            </code>
-          </pre>
+          <CodeBlock
+            languageClass="language-c"
+            codeString={`
+              #include <stdio.h>
+              #include <string.h>
+              
+              void tajna_funkcija() {
+                  printf("Pozvana je tajna funkcija!\\n");
+              }
+              
+              void ranjiva_funkcija() {
+                  char buffer[8];
+                  printf("Unesite podatke: ");
+                  gets(buffer); // Nesigurna funkcija
+              }
+              
+              int main() {
+                  ranjiva_funkcija();
+                  printf("Kraj programa.\\n");
+                  return 0;
+              }
+              `}
+          />
           <p>
             Ako korisnik unese više od 8 znakova, može prebrisati povratnu
             adresu i preusmjeriti izvršavanje na <code>tajna_funkcija</code>.
