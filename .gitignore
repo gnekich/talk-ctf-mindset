@@ -23,4 +23,12 @@ dist-ssr
 *.sln
 *.sw?
 
+# Local development
+.developers-diary/
+
+# CTF
 flag.txt
+
+.env
+.env.*
+!.env.example
