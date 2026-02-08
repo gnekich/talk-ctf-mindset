@@ -1,0 +1,72 @@
+{
+  "name": "Node.js Dev Container",
+  // "image": "mcr.microsoft.com/devcontainers/javascript-node:dev-24-bookworm",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": {
+    "Copy SSH config from .secrets to devcontainer (If exists)": ".devcontainer/scripts/copy-ssh-config-to-container.sh",
+    "Fix pnpm version": "npm install -g pnpm@latest && pnpm config set store-dir /home/node/.local/share/pnpm",
+    "Persistent bash history - Fix Volume Permissions": "su -c 'mkdir -p /cache && chown -R $(whoami): /cache'",
+    "Add history to .bashrc": "echo $BASH_HISTORY_SNIPPET >> ~/.bashrc"
+    // "Frontend Development - Run vitejs dev": "cd react-frontend && pnpm install && pnpm run dev",
+  },
+  "features": {
+    // "ghcr.io/devcontainers/features/common-utils": {
+    //   "installZsh": true,
+    //   "installOhMyZsh": true,
+    //   "installOhMyZshConfig": true,
+    //   "configureZshAsDefaultShell": true
+    // },
+    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
+      "plugins": "zsh-autosuggestions zsh-syntax-highlighting",
+      "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions.git https://github.com/zsh-users/zsh-syntax-highlighting.git"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.fontFamily": "MesloLGM NF",
+        "terminal.integrated.fontLigatures.enabled": true,
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/bin/zsh",
+            "icon": "terminal-ubuntu"
+          }
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "github.copilot",
+        "johnpapa.vscode-peacock",
+        "eamodio.gitlens",
+        "redhat.vscode-yaml",
+        "MarkosTh09.color-picker",
+        "meganrogge.template-string-converter",
+        "vivaxy.vscode-conventional-commits",
+        "hediet.vscode-drawio",
+        "adpyke.codesnap",
+        "mikestead.dotenv",
+        "hlambda.graphql-language-service-server-web",
+        "hashicorp.terraform",
+        "humao.rest-client",
+        "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker",
+        "mhutchie.git-graph"
+      ]
+    }
+  },
+  // "forwardPorts": [3000, 5173],
+  // "mounts": ["source=${localWorkspaceFolder}/node_modules,target=${containerWorkspaceFolder}/node_modules,type=bind"],
+  "mounts": [
+    "source=${localWorkspaceFolder}/.devcontainer/cache,target=/cache,type=bind"
+  ],
+  "containerEnv": {
+    "PNPM_HOME": "/home/node/.local/share/pnpm",
+    "BASH_HISTORY_SNIPPET": "export PROMPT_COMMAND='history -a' && export HISTFILE=/cache/.bash_history"
+    // "PATH": "${PNPM_HOME}/bin:${PATH}" // DO NOT DO THIS - It breaks dev container!
+  },
+  "remoteUser": "root"
+}

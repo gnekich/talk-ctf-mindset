@@ -1,0 +1,14 @@
+.secrets/*
+!.secrets/KEYS/
+!.secrets/SSH/
+!.secrets/.gitkeep
+
+.secrets/KEYS/*
+!.secrets/KEYS/.gitkeep
+.secrets/SSH/*
+!.secrets/SSH/.gitkeep
+
+cache/.bash_history
+cache/.zsh_history
+cache/*
+!cache/.gitkeep
